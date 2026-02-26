@@ -1,0 +1,44 @@
+#Basic Calculator
+  
+print('Welcome to the ultimate Calculator!')
+
+pick = input('\n 1. * 2. / 3. + or 4. -')
+picks = ('*','/','+','-')
+reset = 'yes'
+
+if pick not in picks:
+  pick = input('\n INVALID INPUT 1. * 2. / 3. + 4. - ')
+while True:
+  if pick == '*':
+    num1 = float(input('First number?'))
+    num2 = float(input('Second number?'))
+    total = num1 * num2
+    print(f' Total: {total} ')
+    reset = input('Would you like to use the calculator again?')
+  elif pick == '/':
+    num3 = float(input('First number?'))
+    num4 = float(input('Second number?'))
+    total = num3 / num4
+    print(f' Total: {total} ')
+    reset = input('Would you like to use the calculator again?')
+  elif pick == '+':
+    num5 = float(input('First number?'))
+    num6 = float(input('Second number?'))
+    total = num5 + num6
+    print(f' Total: {total} ')
+    reset = input('Would you like to use the calculator again?')
+  elif pick == '-':
+    num7 = float(input('First number?'))
+    num8 = float(input('Second number?'))
+    total = num7 - num8
+    print(f' Total: {total} ')
+    reset = input('Would you like to use the calculator again?')
+
+if reset == 'yes' or reset == 'ya':
+  pick = input('\n 1. * 2. / 3. + 4. -')
+else:
+ print('Thanks for using my calculator!')
+
+
+
+
